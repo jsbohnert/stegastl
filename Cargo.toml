@@ -1,0 +1,39 @@
+[package]
+name = "stegostl"
+version = "0.1.0"
+authors = ["James Bohnert"]
+edition = "2024"
+
+[dependencies]
+stl = "0.2.*"
+rand = "0.9.*"
+clap = "4.5.32"
+bitstream-io = "2.6.0"
+
+[lib]
+name = "lib"
+path = "src/lib.rs"
+
+[[bin]]
+name = "inspect"
+path = "src/main_inspect.rs"
+test = false
+bench = false
+
+[[bin]]
+name = "noise"
+path = "src/main_noise.rs"
+test = false
+bench = false
+
+[[bin]]
+name = "text"
+path = "src/main_simple_text.rs"
+test = false
+bench = false
+
+[[bin]]
+name = "data"
+path = "src/main_data.rs"
+test = false
+bench = false
