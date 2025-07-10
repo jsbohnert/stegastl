@@ -74,13 +74,13 @@ jobs:
       - name: Mkdir
         run: mkdir release_output
       - name: Copy-bin1
-        run: xcopy "./target/release/data.exe" "./release_output/"
+        run: Copy-Item -Path "./target/release/data.exe"  -Destination "./release_output/"
       - name: Copy-bin2
-        run: xcopy "./target/release/text.exe" "./release_output/"
+        run: Copy-Item -Path "./target/release/text.exe"  -Destination "./release_output/"
       - name: Copy-bin3
-        run: xcopy "./target/release/noise.exe" "./release_output/"
+        run: Copy-Item -Path "./target/release/noise.exe"  -Destination "./release_output/"
       - name: Copy-bin4
-        run: xcopy "./target/release/inspect.exe" "./release_output/"
+        run: Copy-Item -Path "./target/release/inspect.exe"  -Destination "./release_output/"
     
       - name: Archive Release
         uses: thedoctor0/zip-release@0.7.5
