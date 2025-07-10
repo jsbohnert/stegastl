@@ -72,10 +72,10 @@ jobs:
         run: cargo build --verbose --release
 
       - name: Mkdir
-        run: mkdir release_output 
-          xcopy target/release/data.exe release_output
-          xcopy target/release/text.exe release_output
-          xcopy target/release/noise.exe release_output
+        run: mkdir release_output;
+          xcopy target/release/data.exe release_output;
+          xcopy target/release/text.exe release_output;
+          xcopy target/release/noise.exe release_output;
           xcopy target/release/inspect.exe release_output
     
       - name: Archive Release
