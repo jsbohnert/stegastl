@@ -30,6 +30,10 @@ jobs:
     #    name: release-build
     #    path: target/release/
 
+    - uses: montudor/action-zip@v1
+      with:
+        args: zip -qq -r release-ubuntu-${{ github.ref_name }}.zip target/release/data target/release/noise target/release/text target/release/inspect
+
     - name: Create GitHub Release and upload artifacts
       uses: ncipollo/release-action@v1
       with:
@@ -40,6 +44,6 @@ jobs:
           Automatic release for version ${{ github.ref_name }}
 
           Check out the attached artifacts for the build.
-        artifacts: "target/release/data,target/release/noise,target/release/text,target/release/inspect" # Path to the artifacts to be attached to the release
+        artifacts: "release-ubuntu-${{ github.ref_name }}.zip" # Path to the artifacts to be attached to the release
         draft: false
         prerelease: false
