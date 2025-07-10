@@ -49,6 +49,7 @@ jobs:
         prerelease: false
   
   build-win:
+    needs: build
     permissions:
       contents: write
     runs-on: windows-latest
@@ -69,13 +70,12 @@ jobs:
         run: cargo test --verbose
       - name: Build Release
         run: cargo build --verbose --release
-  
-      #- name: Upload full release folder
-      #  uses: actions/upload-artifact@v4
-      #  with:
-      #    name: release-build
-      #    path: target/release/
-  
-      - uses: montudor/action-zip@v1
+    
+      - name: Archive Release
+        uses: thedoctor0/zip-release@0.7.5
         with:
-          args: zip -qq -r release-win-${{ github.ref_name }}.zip target/release/data.exe target/release/noise.exe target/release/text.exe target/release/inspect.exe
+          directory: target/release
+          type: 'zip'
+          filename: release-win-${{ github.ref_name }}.zip'
+          exclusions: '*.git* /*node_modules/* .editorconfig'
+
