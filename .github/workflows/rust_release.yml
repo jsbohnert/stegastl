@@ -76,6 +76,21 @@ jobs:
         with:
           directory: target/release
           type: 'zip'
-          filename: release-win-${{ github.ref_name }}.zip'
+          filename: "release-win-${{ github.ref_name }}.zip"
           exclusions: '*.git* /*node_modules/* .editorconfig'
-
+          
+      - name: Create GitHub Release and upload artifacts
+        uses: ncipollo/release-action@v1
+        with:
+          allowUpdates: true
+          token: ${{ secrets.GITHUB_TOKEN }}
+          tag: ${{ github.ref_name }} # Use the tag name that triggered the workflow
+          name: Release ${{ github.ref_name }}
+          body: |
+            Automatic release for version ${{ github.ref_name }}
+  
+            Check out the attached artifacts for the build.
+          artifacts: "release-win-${{ github.ref_name }}.zip" # Path to the artifacts to be attached to the release
+          draft: false
+          prerelease: false
+  
