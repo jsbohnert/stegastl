@@ -40,6 +40,6 @@ jobs:
           Automatic release for version ${{ github.ref_name }}
 
           Check out the attached artifacts for the build.
-        artifacts: "target/release/*" # Path to the artifacts to be attached to the release
+        artifacts: "target/release/data,target/release/noise,target/release/text,target/release/inspect" # Path to the artifacts to be attached to the release
         draft: false
         prerelease: false
