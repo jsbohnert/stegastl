@@ -47,3 +47,35 @@ jobs:
         artifacts: "release-ubuntu-${{ github.ref_name }}.zip" # Path to the artifacts to be attached to the release
         draft: false
         prerelease: false
+  
+  build-win:
+    permissions:
+      contents: write
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Install Rust
+        uses: actions-rs/toolchain@v1
+        with:
+          toolchain: stable
+          override: true
+
+      - name: Build
+        run: cargo build --verbose
+      - name: Run tests
+        run: cargo test --verbose
+      - name: Build Release
+        run: cargo build --verbose --release
+  
+      #- name: Upload full release folder
+      #  uses: actions/upload-artifact@v4
+      #  with:
+      #    name: release-build
+      #    path: target/release/
+  
+      - uses: montudor/action-zip@v1
+        with:
+          args: zip -qq -r release-win-${{ github.ref_name }}.zip target/release/data.exe target/release/noise.exe target/release/text.exe target/release/inspect.exe
