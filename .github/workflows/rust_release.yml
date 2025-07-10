@@ -70,11 +70,18 @@ jobs:
         run: cargo test --verbose
       - name: Build Release
         run: cargo build --verbose --release
+
+      - name: Mkdir
+        run: mkdir release_output 
+          xcopy target/release/data.exe release_output
+          xcopy target/release/text.exe release_output
+          xcopy target/release/noise.exe release_output
+          xcopy target/release/inspect.exe release_output
     
       - name: Archive Release
         uses: thedoctor0/zip-release@0.7.5
         with:
-          directory: target/release
+          directory: release_output
           type: 'zip'
           filename: "release-win-${{ github.ref_name }}.zip"
           exclusions: '*.git* /*node_modules/* .editorconfig'
@@ -90,7 +97,7 @@ jobs:
             Automatic release for version ${{ github.ref_name }}
   
             Check out the attached artifacts for the build.
-          artifacts: "target/release/release-win-${{ github.ref_name }}.zip" # Path to the artifacts to be attached to the release
+          artifacts: "release_output/release-win-${{ github.ref_name }}.zip" # Path to the artifacts to be attached to the release
           draft: false
           prerelease: false
   
