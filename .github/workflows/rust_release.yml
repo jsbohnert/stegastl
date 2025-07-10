@@ -22,13 +22,13 @@ jobs:
     - name: Run tests
       run: cargo test --verbose
     - name: Build Release
-      run: cargo test --verbose --release
+      run: cargo build --verbose --release
 
-    - name: Upload full release folder
-      uses: actions/upload-artifact@v4
-      with:
-        name: release-build
-        path: target/release/
+    #- name: Upload full release folder
+    #  uses: actions/upload-artifact@v4
+    #  with:
+    #    name: release-build
+    #    path: target/release/
 
     - name: Create GitHub Release and upload artifacts
       uses: ncipollo/release-action@v1
@@ -40,6 +40,6 @@ jobs:
           Automatic release for version ${{ github.ref_name }}
 
           Check out the attached artifacts for the build.
-        artifacts: "data,noise,text,inspect" # Path to the artifacts to be attached to the release
+        artifacts: "target/release/data,target/release/noise,target/release/text,target/release/inspect" # Path to the artifacts to be attached to the release
         draft: false
         prerelease: false
