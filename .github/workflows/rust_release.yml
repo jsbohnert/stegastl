@@ -90,7 +90,7 @@ jobs:
             Automatic release for version ${{ github.ref_name }}
   
             Check out the attached artifacts for the build.
-          artifacts: "release-win-${{ github.ref_name }}.zip" # Path to the artifacts to be attached to the release
+          artifacts: "target/release/release-win-${{ github.ref_name }}.zip" # Path to the artifacts to be attached to the release
           draft: false
           prerelease: false
   
