@@ -72,11 +72,15 @@ jobs:
         run: cargo build --verbose --release
 
       - name: Mkdir
-        run: mkdir release_output;
-          xcopy "./target/release/data.exe" "./release_output/";
-          xcopy "./target/release/text.exe" "./release_output/";
-          xcopy "./target/release/noise.exe" "./release_output/";
-          xcopy "./target/release/inspect.exe" "./release_output/"
+        run: mkdir release_output
+      - name: Copy-bin1
+        run: xcopy "./target/release/data.exe" "./release_output/"
+      - name: Copy-bin2
+        run: xcopy "./target/release/text.exe" "./release_output/"
+      - name: Copy-bin3
+        run: xcopy "./target/release/noise.exe" "./release_output/"
+      - name: Copy-bin4
+        run: xcopy "./target/release/inspect.exe" "./release_output/"
     
       - name: Archive Release
         uses: thedoctor0/zip-release@0.7.5
