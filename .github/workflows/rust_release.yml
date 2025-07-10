@@ -1,0 +1,43 @@
+name: RustRelease
+
+on:
+  push:
+    tags:
+      - 'v*.*.*' # Trigger on new tags like v1.0.0
+  
+env:
+  CARGO_TERM_COLOR: always
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: Build
+      run: cargo build --verbose
+    - name: Run tests
+      run: cargo test --verbose
+    - name: Build Release
+      run: cargo test --verbose --release
+
+    - name: Upload full release folder
+      uses: actions/upload-artifact@v4
+      with:
+        name: release-build
+        path: target/release/
+
+    - name: Create GitHub Release and upload artifacts
+      uses: ncipollo/release-action@v1
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        tag: ${{ github.ref_name }} # Use the tag name that triggered the workflow
+        name: Release ${{ github.ref_name }}
+        body: |
+          Automatic release for version ${{ github.ref_name }}
+
+          Check out the attached artifacts for the build.
+        artifacts: "target/release/*" # Path to the artifacts to be attached to the release
+        draft: false
+        prerelease: false
