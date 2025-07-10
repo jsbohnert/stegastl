@@ -73,10 +73,10 @@ jobs:
 
       - name: Mkdir
         run: mkdir release_output;
-          xcopy target/release/data.exe release_output;
-          xcopy target/release/text.exe release_output;
-          xcopy target/release/noise.exe release_output;
-          xcopy target/release/inspect.exe release_output
+          xcopy "./target/release/data.exe" "./release_output/";
+          xcopy "./target/release/text.exe" "./release_output/";
+          xcopy "./target/release/noise.exe" "./release_output/";
+          xcopy "./target/release/inspect.exe" "./release_output/"
     
       - name: Archive Release
         uses: thedoctor0/zip-release@0.7.5
