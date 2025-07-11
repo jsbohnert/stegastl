@@ -41,8 +41,13 @@ Alternatively, these tools could be used as part of fun activities like digital 
 
 This project is the result of my experiments.
 
+# Concept
 
-#### Attributions and License
+# Tools Overview
+
+# Implementation Details (how it works)
+
+# Attributions and License
 Project code is licensed under the MIT License.
 
 Please see [this file](demo_files/attributions_and_licenses.txt) for all license and attribution notes for non-original files used in this project's demo files and this documentation
