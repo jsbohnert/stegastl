@@ -1,0 +1,18 @@
+
+`3DBenchy.stl` was procured from https://www.thingiverse.com/thing:763622/files,
+  having been released under Creative Commons CC0 and is shared here as reference data via same license.
+
+`3DBenchy_Stego_Demo.stl` is modified via the stlstego project to embed an easter egg file
+  (a representation of another creative work) that can be retrieved at bit depth 5.
+  The specific details of its attribution can be found in the embedded file's standard metadata
+  via any popular program which supports it, and is not copied here in the interest of joy for anyone who wants to find it.
+
+  Safety Note: the embedded file is non-encrypted, and is not an executable nor does it contain any code.
+  It is a hand-rolled piece of media content. Hint: VLC will show you what kind of media it is.
+  Rename it to its proper extension and VLC will also display its metadata and its attribution info.
+
+`puffin.jpg` is a cropped edit of the photo `Puffin (Fratercula arctica) at Látrabjarg, Iceland.` by Richard Bartz.
+  Sourced from Wikipedia, used and shared here under its original Creative Commons Attribution-Share Alike 3.0 Unported license.
+
+
+Thanks go out to the creators and artists which provide these resources to the world.
