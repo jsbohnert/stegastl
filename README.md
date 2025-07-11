@@ -32,6 +32,10 @@ You can download or build the Rust project here and use the `data` executable to
 
 Pretty neat.
 
+## Wait, its "Steganography", why did you name it "Stego"
+
+I think I was thinking of Stegosaurs. The name stays.
+
 # Inspiration
 
 This topic came to mind after watching Angus Deveson's (Maker's Muse) YouTube video [How to obscure 3D models for fun or profit.](https://www.youtube.com/watch?v=aMLdy_USwXU). The topic of the video was exploring some creative ways to manipulate 3D modelling files within a 3D printing context to achieve a sort of 'watermark' or 'security by obscurity' level of manipulation.  MM's ideas were fun but the notion occured to me that playing within the mechanisms of 3D modeling would at least always leave some very observable evidence that you did something to the file.
