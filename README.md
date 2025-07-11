@@ -45,6 +45,14 @@ This project is the result of my experiments.
 
 # Tools Overview
 
+## inspect
+
+## data
+
+## text
+
+## noise
+
 # Implementation Details (how it works)
 
 # Attributions and License
