@@ -1,5 +1,5 @@
 # stegostl
-Embedding data (steganography) in 3D STL models
+Experimental tools embedding data (steganography) in 3D STL models
 
 # Introduction
 Can you spot a difference between these two Benchy models?
@@ -30,9 +30,15 @@ You can download or build the Rust project here and use the `data` executable to
         bfa4248c0b641e814a51a95530865334  puffin_out.jpg
         bfa4248c0b641e814a51a95530865334  demo_files/puffin.jpg
 
-
+Pretty neat.
 
 # Inspiration
+
+This topic came to mind after watching Angus Deveson's (Maker's Muse) YouTube video [How to obscure 3D models for fun or profit.](https://www.youtube.com/watch?v=aMLdy_USwXU). The topic of the video was exploring some creative ways to manipulate 3D modelling files within a 3D printing context to achieve a sort of 'watermark' or 'security by obscurity' level of manipulation.  MM's ideas were fun but the notion occured to me that playing within the mechanisms of 3D modeling would at least always leave some very observable evidence that you did something to the file.
+
+I started thinking about whether 3D models, often shared broadly and publicly, could be used as a method for really obscuring data and potentially even being used to transmit cryptographically secure data within a "carrier" file format. In this way, a completely innocuous 3D model of some anodyne object (a boat, a toy, a statue of a superhero) could contain secret messages or private watermark data. On the other hand. it could be used as part of fun activities like digital scavenger hunts or ARGs.
+
+This project is the result of my experiments.
 
 
 #### Attributions and License
