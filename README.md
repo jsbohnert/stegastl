@@ -45,7 +45,7 @@ Alternatively, these tools could be used as part of fun activities like digital 
 
 This project is the result of my experiments.
 
-# Concept
+
 
 # Tools Overview
 
@@ -58,6 +58,12 @@ This project is the result of my experiments.
 ## noise
 
 # Implementation Details (how it works)
+## Concept
+## The STL Format
+## Using STL vertices as a bitstream
+
+# Uncertainties and known issues
+
 
 # Attributions and License
 Project code is licensed under the MIT License.
