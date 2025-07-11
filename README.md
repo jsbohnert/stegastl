@@ -6,11 +6,12 @@ Can you spot a difference between these two Benchy models?
 
 <img src="docs/img_benchy_compare.png" alt="Two benchy models side by side" width="90%"/>
 
-The model on the right has a puffin in it:
+The model on the right has a puffin in it, but you wont spot it in a model viewer or notice that the file is any different than the default Benchy via simple review of the file.
 
-| | |
-| -------- | ------- |
-| <img src="demo_files/puffin.jpg" alt="Puffin" width="30%"/> | |
+<img src="demo_files/puffin.jpg" alt="Puffin" width="30%"/>
+<img src="docs/img_benchy_files_compare.png" alt="Filename comparison of 3DBenchy files with the same size" /> 
+
+
 
 #### Attributions and License
 Project code is licensed under the MIT License.
