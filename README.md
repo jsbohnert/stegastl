@@ -36,7 +36,8 @@ Pretty neat.
 
 This topic came to mind after watching Angus Deveson's (Maker's Muse) YouTube video [How to obscure 3D models for fun or profit.](https://www.youtube.com/watch?v=aMLdy_USwXU). The topic of the video was exploring some creative ways to manipulate 3D modelling files within a 3D printing context to achieve a sort of 'watermark' or 'security by obscurity' level of manipulation.  MM's ideas were fun but the notion occured to me that playing within the mechanisms of 3D modeling would at least always leave some very observable evidence that you did something to the file.
 
-I started thinking about whether 3D models, often shared broadly and publicly, could be used as a method for really obscuring data and potentially even being used to transmit cryptographically secure data within a "carrier" file format. In this way, a completely innocuous 3D model of some anodyne object (a boat, a toy, a statue of a superhero) could contain secret messages or private watermark data. On the other hand. it could be used as part of fun activities like digital scavenger hunts or ARGs.
+I started thinking about whether 3D models, often shared broadly and publicly, could be used as a method for really obscuring data and potentially even being used to transmit cryptographically secure data within a "carrier" file format. In this way, a completely innocuous 3D model of some object (a boat, a toy, a statue of a superhero) could contain secret messages or private watermark data, while still being perfectly functional for its original purpose (3D printing real objects from the model).
+Alternatively, these tools could be used as part of fun activities like digital scavenger hunts or ARGs.
 
 This project is the result of my experiments.
 
