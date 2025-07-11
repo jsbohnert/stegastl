@@ -34,7 +34,7 @@ Pretty neat.
 
 ## Wait, its "Steganography", why did you name it "Stego"
 
-I think I was thinking of Stegosaurs. The name stays.
+I think I was thinking of Stegosaurs at some point. The name stays, stegosaurs are cool.
 
 # Inspiration
 
