@@ -41,6 +41,11 @@ Alternatively, these tools could be used as part of fun activities like digital 
 
 This project is the result of my experiments.
 
+# Solution Overview - Why It Works
+
+In reality, a binary STL file is essentially a list of triangles, and each triangle is a list of 3 3D points in space (Vertices).
+
+
 
 
 # Tools Overview
@@ -53,7 +58,7 @@ This project is the result of my experiments.
 
 ## noise
 
-# Implementation Details (how it works)
+# Implementation Details
 ## Concept
 ## The STL Format
 ## Using STL vertices as a bitstream
