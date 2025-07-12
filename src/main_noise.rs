@@ -4,7 +4,7 @@ use std::collections::HashMap;
 use lib::{manip, stlio};
 
 fn main() {
-    let matches = Command::new("STL Stego Noise Eval Test Tool")
+    let matches = Command::new("STL Stega Noise Eval Test Tool")
         .about("Fuzzes STL file with random data in desired encode bit ranges, outputs sample files for inspection")
         .arg(Arg::new("file").required(true).value_parser(value_parser!(String)))
         .arg(Arg::new("prefix").required(true).value_parser(value_parser!(String)))

@@ -7,7 +7,7 @@ use lib::{manip, reader_writer, stlio};
 use std::io;
 
 fn main() -> std::io::Result<()> {
-    let matches = Command::new("StegoSTL test tool: Text Embedding")
+    let matches = Command::new("StegaSTL test tool: Text Embedding")
         .subcommand(
             Command::new("encode")
                 .arg(Arg::new("in_file_path").required(true))

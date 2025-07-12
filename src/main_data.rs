@@ -8,7 +8,7 @@ use std::io;
 //use std::io::{Read, Seek, SeekFrom};
 
 fn main() -> std::io::Result<()> {
-    let matches = Command::new("StegoSTL test tool: Data Embedding")
+    let matches = Command::new("StegaSTL test tool: Data Embedding")
         .subcommand(
             Command::new("encode")
                 .arg(Arg::new("in_file_path").required(true))

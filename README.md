@@ -1,4 +1,4 @@
-# stegostl
+# stegaSTL
 Experimental tools embedding data (steganography) in 3D STL models
 
 # Introduction

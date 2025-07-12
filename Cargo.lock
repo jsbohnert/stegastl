@@ -197,7 +197,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "stegostl"
+name = "stegastl"
 version = "0.1.0"
 dependencies = [
  "bitstream-io",

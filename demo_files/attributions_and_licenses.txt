@@ -2,7 +2,7 @@
 `3DBenchy.stl` was procured from https://www.thingiverse.com/thing:763622/files,
   having been released under Creative Commons CC0 and is shared here as reference data via same license.
 
-`3DBenchy_Stego_Demo.stl` is modified via the stlstego project to embed an easter egg file
+`3DBenchy_Stega_Demo.stl` is modified via the stegaSTL project to embed an easter egg file
   (a representation of another creative work) that can be retrieved at bit depth 5.
   The specific details of its attribution can be found in the embedded file's standard metadata
   via any popular program which supports it, and is not copied here in the interest of joy for anyone who wants to find it.
