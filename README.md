@@ -43,7 +43,31 @@ This project is the result of my experiments.
 
 # Solution Overview - Why It Works
 
-In reality, a binary STL file is essentially a list of triangles, and each triangle is a list of 3 3D points in space (Vertices).
+## Concept
+In reality, a binary STL file is essentially a list of triangles, and each triangle is a list of 3 3D points in space (Vertices). Simplified (you can look up the details of the format elsewhere)
+
+* File Header
+* List of Triangles:
+    * Repeating:
+        * Triangle Normal
+        * Triangle Vertex 1
+        * Triangle Vertex 2
+        * Triangle Vertex 3
+     
+To describe a (useful) 3D shape, many triangles will be used that will form a mesh, where vertices join edges together forming a closed shape. In other words, every vertex in every triangle will appear in at least 2 triangles. For example, a simple cube requires 2 * 6 (12) triangles encompassing 8 unique vertices :
+
+<img src="docs/img_tris_example.png" alt="3D cube demonstrating a simple triangle mesh" width="30%"/>
+
+StegaSTL uses the vertex data to hide payloads, relying on the notion that the amount of bits uses by the data format to represent 3D coordinations is likely overkill for the precision required to do the kinds of modelling useful to 3D printing enthusiasts. Really this is the core conceit of the implementation.
+
+## STL Vertex Representation
+
+Each vertex in a binary STL is represented by three 32-bit values, representing X, Y, Z coordinates.
+
+
+
+## 
+
 
 
 
