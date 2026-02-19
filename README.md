@@ -119,7 +119,7 @@ One detail remains: knowing how much data is present in the file.
 
 Since the data may be compressed, or cryptographically protected, theres no simple way to know that data is even present in the file, let alone how many bytes exist.
 
-For this reason, one concession is made in the design: at time of encoding, the first 8 bytes of data written into the vertex bits encodes a 64bit number indicating how many bytes of data are encoded.
+For this reason, one concession is made in the design: at time of encoding, the first 8 bytes of data written into the vertex bits encodes a 64bit number indicating how many bytes of data follow, comprising the payload to be decoded and output.
  
 This ostensibly removes some of the "security by obscurity" from the implementation, since someone could potentially look for suspiciously accurate numbers encoded at various "bit depths" to see if the file might contain something. However, I think this is a reasonable tradeoff for this tool because:
 
