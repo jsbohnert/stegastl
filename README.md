@@ -106,7 +106,7 @@ However, if we've established that some number of bits are "available" for rando
   - Proceed through the file until all bytes of data have been rewritten.
 - With all data encoded, rewrite the STL file to disk:
   - Following the vertices in the original source file
-  - Look up the "new" value of each vertex, and output each triangle with its adjusted vertices
+  - Look up the "new" coordinate values of each vertex, and output each triangle with its adjusted vertices
 
 By following the natural order of the file, using "order of first encounter with each unique vertex", and outputting the resulting STL with its NEW vertices following the exact same ordering, the resulting file can be "Decoded" by following the same pattern:
  - Identify each unique vertex, in order
@@ -132,7 +132,7 @@ However, this is what will let you encode anything you want by simply knowing th
 
 That depends on how much risk you're willing to take that your model will look weird, or not pass muster in a slicer.
 
-The example at the top of this document encodes data at a bit depth of `5`. That is, the lowest 5 bits of each unique vertex is considered available for data storage.
+The example at the top of this document encodes data at a bit depth of `5`. That is, the lowest 5 bits of each unique vertex-coordinate is considered available for data storage.
 
 The benchy has `225,706` triangles described by `112,662` vertices.
 
