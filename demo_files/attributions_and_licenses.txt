@@ -11,8 +11,8 @@
   It is a hand-rolled piece of media content. Hint: VLC will show you what kind of media it is.
   Rename it to its proper extension and VLC will also display its metadata and its attribution info.
 
-`puffin.jpg` is a cropped edit of the photo `Puffin (Fratercula arctica) at Látrabjarg, Iceland.` by Richard Bartz.
-  Sourced from Wikipedia, used and shared here under its original Creative Commons Attribution-Share Alike 3.0 Unported license.
+`puffin.jpg` is a cropped edit of the photo `Puffin (Fratercula arctica) at Látrabjarg, Iceland.` by Richard Bartz - Own work, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=27624174. Used and shared here under same.
 
+`500px-Float_example.svg.png` from Wikipedia.  By Fresheneesz at the English Wikipedia project, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=3357169, used and shared here under same license.
 
 Thanks go out to the creators and artists which provide these resources to the world.
