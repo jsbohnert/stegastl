@@ -130,7 +130,7 @@ However, this is what will let you encode anything you want by simply knowing th
 
 ## So how much data can you put in a Benchy?
 
-That depends on how much risk you're willing to take.
+That depends on how much risk you're willing to take that your model will look weird, or not pass muster in a slicer.
 
 The example at the top of this document encodes data at a bit depth of `5`. That is, the lowest 5 bits of each unique vertex is considered available for data storage.
 
