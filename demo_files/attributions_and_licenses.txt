@@ -13,6 +13,8 @@
 
 `puffin.jpg` is a cropped edit of the photo `Puffin (Fratercula arctica) at Látrabjarg, Iceland.` by Richard Bartz - Own work, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=27624174. Used and shared here under same.
 
+`3DBenchy_Embedded_Puffin.stl`, since it contains the above photo embedded in it, is also licensed CC BY-SA 3.0 and shared as such
+
 `500px-Float_example.svg.png` from Wikipedia.  By Fresheneesz at the English Wikipedia project, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=3357169, used and shared here under same license.
 
 Thanks go out to the creators and artists which provide these resources to the world.
