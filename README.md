@@ -20,7 +20,7 @@ This is an implementation of the concept of [steganography](https://en.wikipedia
 Oh, also it was my excuse to learn Rust. Forgive newbie mistakes if you find them.
 
 ## Prove it
-You can download or build the Rust project here and use the `data` executable to extract the image from `3DBenchy_Embedded_Puffin.stl` - you just need to know a few pieces of info about the enhanced STL file - the "bit depth" the data is encoded at (more on this later in this doc), which in this case is `5`, and the filename you want to output to (since you know you're expecting a JPEG image, might as well name it a `.jpg` file.)
+You can [download](https://github.com/jsbohnert/stegastl/releases) or build the Rust project here and use the `data` executable to extract the image from `3DBenchy_Embedded_Puffin.stl` - you just need to know a few pieces of info about the enhanced STL file - the "bit depth" the data is encoded at (more on this later in this doc), which in this case is `5`, and the filename you want to output to (since you know you're expecting a JPEG image, might as well name it a `.jpg` file.)
 
     # data decode demo_files/3DBenchy_Embedded_Puffin.stl puffin_out.jpg 5
         File: demo_files/3DBenchy_Embedded_Puffin.stl
