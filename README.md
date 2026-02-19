@@ -382,3 +382,7 @@ Project code and benchy images published under the MIT License.
 Where noted, some image files included in this repo for this document are used and shared under CC licenses - the are attributed and shared under same as required.
 
 Please see [this file](demo_files/attributions_and_licenses.txt) for all license and attribution notes for non-original files used in this project's demo files and this documentation
+
+# Final word
+
+Use this tool in good faith and share knowledge willingly. Always remember, when obscuring sensitive information, assume that the methods of obscurity are known - no amount of obscurity guarantees security - use real cryptography for sensitive data no matter where you hide it.
